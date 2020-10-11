@@ -1,0 +1,34 @@
+@import "global";
+@import "left-side";
+@import "right-side";
+
+header {
+  position: absolute;
+  top: 6rem;
+  right: 6.2rem;
+  z-index: 3;
+}
+
+header #logo {
+  font-family: Poppins;
+  color: #fff;
+  font-weight: 800;
+  font-size: 4.2rem;
+}
+
+.reservation {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    position: static;
+    margin-top: 4rem;
+    #logo {
+      color: #000;
+      text-align: center;
+    }
+  }
+}
